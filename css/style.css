@@ -1,3 +1,148 @@
-body{
-    background-color: red;
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+    border: 1px solid black;
 }
+
+
+/* intestazione */
+header{
+    width: 100%;
+    /* position: fixed; */
+}    
+
+/* main{
+    margin-top: 400px;
+} */
+
+/* .body{
+    padding-top: 400px;
+} */
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.l-child{
+    width: 40%;
+    display: flex;
+}
+
+.r-child{
+    flex-basis: 30%;
+    display: flex;
+}
+
+.h-item{
+    width: 113px;
+}
+
+.jumbotron{
+    height: 300px;
+    background-color: aqua;
+}
+
+/* prima sezione */
+.main-container{
+    max-width: 1080px;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.row{
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    width: 345px;
+    height: 100px;
+}
+
+.card-wide{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team{
+    height: 50px;
+    width: 1080px;
+}
+
+.team-left{
+    width: 50%;
+    height: 100px;
+}
+
+.team-right{
+    width: 50%;
+    height: 100px;
+}
+
+.partners{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-picture{
+    min-height: 100px;
+    width: calc(100% / 2);
+}
+
+.card-text{
+    min-height: 100px;
+    width: calc(100% / 2);
+}
+}
+
+.operation{
+    min-height: 20px;
+}
+
+.pic.description{
+    height: 50%;
+}
+
+.users{
+    min-height: 50px;
+}
+
+.logos{
+    width: 100%;
+}
+
+.l-row.{
+    width: calc(100% / 3);
+}
+
+.l-card{
+    min-height: 50px;
+}
+
+.faq-container.{
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.f-row{
+    max-width: 100%;
+}
+
+.f-card{
+    min-height: 100px;
+}
+
