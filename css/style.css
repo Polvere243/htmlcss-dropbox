@@ -309,11 +309,11 @@ nav ul{
     display: block;
 }
 
-.middle:hover .center-hidden{
+.faq:hover .center-hidden{
     display: block;
 }
 
-.down:hover .bottom-hidden{
+.faq:hover .bottom-hidden{
     display: block;
 }
 
