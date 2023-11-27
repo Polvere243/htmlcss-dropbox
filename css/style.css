@@ -13,7 +13,18 @@ body{
 /* generici */
 
 h1{
-    font-weight: 800;
+    font-weight: 900;
+    font-size: 75px;
+    margin-bottom: 40px;
+}
+
+h2{
+    margin-bottom: 40px;
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h4{
@@ -22,12 +33,14 @@ h4{
 
 li{
     list-style-type: none;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-a{
+nav li > a{
     color: black;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 div > ul{
@@ -44,19 +57,49 @@ img{
     display: block;
 }
 
+h5{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
 h6{
     margin-top: 10px;
+    margin-bottom10px
+}
+
+.fa-arrow-down{
+    font-size: 40px;
 }
 
 /* Utili */
 
 .btn{
     background-color: blue;
+    padding: 5px 10px;;
+    color: white;
 }
 
 
-.lightblue{
+.btn.lightblue{
     background-color: rgb(44, 44, 249);
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    padding-left: 35px;
+}
+
+.btn.lightblue.align{
+    padding-left: 80px;
+}
+
+.pointed{
+    margin-bottom: 30px;
+}
+
+.j-text.lower{
+    margin-top: 20px;
+    margin-bottom: 65px;
 }
 
 .row{
@@ -66,9 +109,14 @@ h6{
     gap: 60px;
 }
 
+.card.plans{
+    border: 1px solid lightgray;
+}
+
+    
 .card{
     width: calc(100% / 3 - 40px );
-    border: 1px solid lightgray;
+    padding: 10px 20px;
 }
 
 .circle{
@@ -103,7 +151,7 @@ header{
 }
 
 #logo{
-    height: 25px;
+    height: 20px;
 }
 
 .navbar.r{
@@ -141,6 +189,12 @@ nav ul{
     max-width: 1080px;
 }
 
+.j-text{
+    font-weight: normal;
+    color: rgb(32, 30, 30);
+    margin-bottom: 20px;
+}
+
 /* prima sezione */
 
 .title-list{
@@ -168,6 +222,25 @@ nav ul{
     margin-top: 110px;
 }
 
+.content-list li{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.time{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.card-plan{
+    border: 1px solid lightgray;
+}
+
 .card-wide{
     width: 100%;
     display: flex;
@@ -180,22 +253,36 @@ nav ul{
     height: 50px;
     width: 1080px;
     border-bottom: 1px solid lightgray;
+    text-align: center;
+    line-height: 50px;
 }
 
+.team-container{
+    display: flex;
+}
 
 .team-left{
-    width: 50%;
-    height: 100px;
+    width: 70%;
+    padding: 20px;
 }
 
 .team-right{
-    width: 50%;
-    height: 100px;
+    width: 30%;
+    padding-top: 50px;
 }
+
 
 .partners{
     display: flex;
 }    
+
+.card-title{
+    border: 1px solid lightgray;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .card-picture{
     min-height: 100px;
@@ -205,13 +292,19 @@ nav ul{
 .card-text{
     min-height: 100px;
     flex-basis: 40%;
+    padding: 50px;
 }
 
+.txt{
+    margin-bottom: 20px
+}
 
 .operation{
     width: 100%
 
 }
+
+
 
 .users{
     width: 66%;
@@ -227,49 +320,78 @@ nav ul{
 
 /* seconda sezione */
 
+
 .logos-container{
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    border: 1px solid black;
 }
 
-
-
-
-[class$="-row"]{
-    display: flex;
+.logos-container.side{
     flex-wrap: wrap;
-    width: 33%;
-    align-content: flex-start;
 }
 
+#pic{
+    margin: 50px 0;
+    display: flex;    
+}
 
-
-[class$="-pic-card"]{
-    height: 219px;
-    width: 219px;
-    position: relative;
+[class^="l-"]{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }    
 
 .logos{
-    max-width: 80%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
+    max-width: 50%;
     display: block;
+    filter: invert(1);
 }
 
-.l-center{
-    padding: 40px;
-    width: 33%;
+.t-left{
+    background-color: rgb(108, 212, 148);
+}
+.t-right{
+    background-color: rgb(110, 12, 46);
 }
 
+.b-left{
+    background-color: rgb(0, 132, 255);
+}
+
+
+.b-right{
+    background-color: red;
+}
+.up-left{
+    background-color: rgb(190, 11, 11);
+}
+
+.up-right{
+    background-color: lightblue;
+}
+
+.down-left{
+    background-color: blue;
+}
+
+.down-right{
+    background-color: rgb(248, 229, 53);
+}
+
+.logos-container.center{
+    flex-direction: column;
+    padding-top: 40px;
+    background-color: rgb(237, 243, 243);
+}
 
 #designit{
     max-width: 165px;
     margin-bottom: 20px;
+    display: block;
 }
 
 .center-p{
@@ -287,6 +409,7 @@ nav ul{
     height: 230px;
     padding-left: 210px;
     padding-top: 75px;
+    background-color: lightblue;;
 }
 
 .company-container{
@@ -294,9 +417,18 @@ nav ul{
     margin: 0 auto;
 }
 
+.btn.c-btn{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
 .company{
     display: inline;
     margin-right: 100px;
+    color: rgb(63, 4, 4);
 }
 
 /* FAQ */
@@ -317,7 +449,7 @@ nav ul{
     border-bottom: 1px solid lightgrey;
 }
 
-.fa-chevron-down{
+.fa-chevron-down, .fa-chevron-up{
     margin-left: 470px;
 }    
 
@@ -341,22 +473,25 @@ nav ul{
 
 /* footer */
 
+footer{
+    background-color: black;
+}
+
 .f-container{
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     margin-top: 60px;
     flex-wrap: wrap;
-    gap: 55px;
-    background-color: black;
+    gap: 100px;
+}    
+
+.footer-card a{
+    color: white;
+    text-decoration: none;
 }
 
-.f-row{
-    max-width: 100%;
+#lang{
+    color: white;
+    margin-left: 130px;
 }
-
-.f-card{
-    min-height: 100px;
-}
-
