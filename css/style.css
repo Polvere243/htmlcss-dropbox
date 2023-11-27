@@ -4,14 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Open Sans', sans-serif;
-    border: 1px solid black;
-}
+}    
 
 body{
     background-color: white;
 }
 
 /* generici */
+
+h1{
+    font-weight: 800;
+}
 
 h4{
     display: inline-block;
@@ -65,6 +68,7 @@ h6{
 
 .card{
     width: calc(100% / 3 - 40px );
+    border: 1px solid lightgray;
 }
 
 .circle{
@@ -112,17 +116,13 @@ nav ul{
     align-items: center;
     list-style-type: none;
     gap: 25px;
+    color: rgb(142, 139, 139);
 }
 
-
-
-.h-item{
-    width: 113px;
-}
 
 .jumbotron{
-    margin-top: 75px;
-    background-color: aqua;
+    margin-top: 70px;
+    background-color: rgb(168, 195, 214);
 }
 
 .j-container{
@@ -142,6 +142,23 @@ nav ul{
 }
 
 /* prima sezione */
+
+.title-list{
+    display: flex;
+    gap: 25px;
+}
+
+.circle{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.circle.strong{
+    border: 5px solid rgb(44, 44, 249);
+}
+
 .main-container{
     max-width: calc(1080px - 10%);
     min-height: 500px;
@@ -155,12 +172,16 @@ nav ul{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid lightgray;
 }
+
 
 .team{
     height: 50px;
     width: 1080px;
+    border-bottom: 1px solid lightgray;
 }
+
 
 .team-left{
     width: 50%;
@@ -284,6 +305,7 @@ nav ul{
     max-width: calc(1080px - 10%);
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 80px;
 }
 
 .faq-title{
@@ -315,6 +337,19 @@ nav ul{
 
 .faq:hover .bottom-hidden{
     display: block;
+}
+
+/* footer */
+
+.f-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 55px;
+    background-color: black;
 }
 
 .f-row{
