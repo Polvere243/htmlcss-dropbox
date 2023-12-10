@@ -63,9 +63,14 @@ h5{
     color: white;
 }
 
+.row h5{
+    color: black;
+
+}
+
 h6{
     margin-top: 10px;
-    margin-bottom10px
+    margin-bottom: 10px;
 }
 
 .fa-arrow-down{
@@ -106,31 +111,14 @@ h6{
     margin-bottom: 65px;
 }
 
-.row{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -20px;
+.m-b-125{
+    margin-bottom: 125px;
 }
 
-.col{
-    padding: 0 20px;
-    width: calc(100% / 3);
+.m-b-95{
+    margin-bottom: 95px;
 }
 
-.card.plans{
-    border: 1px solid lightgray;
-}
-
-    
-.card-content{
-    padding: 10px 20px;    
-}
-
-.circle{
-    border: 1px solid black;
-    border-radius: 50%;
-}
 
 /* intestazione */
 header{
@@ -184,7 +172,7 @@ nav ul{
 .j-container{
     max-width: 1080px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 70px;
     position: relative;
     top: 50px;
 }
@@ -198,8 +186,8 @@ nav ul{
 }
 
 .j-text{
-    font-weight: normal;
-    color: rgb(32, 30, 30);
+    font-weight: 100;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -230,6 +218,39 @@ nav ul{
     margin-top: 110px;
 }
 
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.col{
+    padding: 0 20px;
+    width: calc(100% / 3);
+    margin-bottom: 20px;
+}
+
+.card.plans{
+    border: 1px solid lightgray;
+}
+
+    
+.card-content{
+    padding: 10px 20px;    
+}
+
+hr{
+    width: 70px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+}
+
+.circle{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
 .content-list li{
     display: flex;
     align-items: baseline;
@@ -243,17 +264,16 @@ nav ul{
     margin-bottom: 10px;
 }
 
-
-
-.card-plan{
-    border: 1px solid lightgray;
+.col.full{
+    padding: 0 20px;
+    width: 100%;
 }
 
 .card-wide{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid lightgray;
+    margin-bottom: 20px;
 }
 
 
@@ -282,6 +302,8 @@ nav ul{
 
 .partners{
     display: flex;
+    padding: 0 20px;
+    margin-bottom: 100px;
 }    
 
 .card-title{
@@ -308,14 +330,8 @@ nav ul{
 }
 
 .operation{
-    width: 100%
-
-}
-
-
-
-.users{
-    width: 66%;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .pic.description{
@@ -340,9 +356,10 @@ nav ul{
     flex-wrap: wrap;
 }
 
+
 #pic{
     margin: 50px 0;
-    display: flex;    
+    display: flex;
 }
 
 [class^="l-"]{
@@ -392,7 +409,7 @@ nav ul{
 
 .logos-container.center{
     flex-direction: column;
-    padding-top: 40px;
+    padding: 40px 20px;
     background-color: rgb(237, 243, 243);
 }
 
@@ -415,14 +432,12 @@ nav ul{
 .d-company{
     width: 100%;
     height: 230px;
-    padding-left: 210px;
     padding-top: 75px;
-    background-color: lightblue;;
-}
-
-.company-container{
-    max-width: calc(1080 - 10%);
-    margin: 0 auto;
+    background-color: lightblue;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    gap: 160px;
 }
 
 .btn.c-btn{
@@ -488,18 +503,25 @@ footer{
 .f-container{
     max-width: 1080px;
     margin: 0 auto;
+}  
+
+.f-row{
     display: flex;
     margin-top: 60px;
     flex-wrap: wrap;
     gap: 100px;
-}    
+}
 
 .footer-card a{
     color: white;
     text-decoration: none;
 }
 
+footer hr{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
 #lang{
     color: white;
-    margin-left: 130px;
 }
